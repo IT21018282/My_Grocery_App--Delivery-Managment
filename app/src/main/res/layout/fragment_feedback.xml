@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin"
+    android:background="@color/White">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="@dimen/Width"
+        android:layout_height="@dimen/Height"
+        android:layout_margin="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/labelSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.429" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="@dimen/Width"
+        android:layout_height="@dimen/Height"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/labelSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.708" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="@dimen/Width"
+        android:layout_height="@dimen/Height"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/Message"
+        android:inputType="textPostalAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/labelSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.853" />
+
+    <EditText
+        android:id="@+id/contactNo2"
+        android:layout_width="@dimen/Width"
+        android:layout_height="@dimen/Height"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/ContactNo"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/labelSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/rateUs"
+        android:layout_width="@dimen/Width"
+        android:layout_height="wrap_content"
+        android:text="@string/Rate"
+        android:textColor="@color/black"
+        android:textSize="@dimen/labelSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <TextView
+        android:id="@+id/feedBackText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/feedBack"
+        android:textColor="@color/black"
+        android:textSize="@dimen/labelSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/Height"
+        android:contentDescription="@string/Ratings"
+        android:progressBackgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="@dimen/halfWidth"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/black"
+        android:text="@string/Send"
+        android:textColor="#3949AB"
+        android:textSize="@dimen/labelSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="191dp"
+        android:layout_height="48dp"
+        android:background="@android:drawable/spinner_background"
+        android:contentDescription="@string/Category"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323" />
+
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="145dp"
+        android:layout_height="49dp"
+        android:text="@string/Category"
+        android:textColor="@color/black"
+        android:textSize="@dimen/labelSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323" />
+</androidx.constraintlayout.widget.ConstraintLayout>
